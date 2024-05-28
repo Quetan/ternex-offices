@@ -10,11 +10,12 @@ const TitleVariants = cva('flex flex-row items-center gap-4', {
 			primary: 'text-primary'
 		},
 		size: {
-			default: 'text-xl font-semibold',
+			default: 'text-lg lg:text-xl font-medium',
+			xs: 'text-base font-medium',
 			sm: 'text-lg font-medium',
-			lg: 'text-2xl font-bold tracking-wide',
-			xl: 'text-5xl font-bold tracking-tight',
-			xs: 'text-base font-medium'
+			lg: 'text-xl lg:text-2xl font-semibold',
+			xl: 'text-3xl lg:text-4xl font-bold',
+			xxl: 'text-4xl lg:text-5xl font-bold'
 		}
 	},
 	defaultVariants: {
