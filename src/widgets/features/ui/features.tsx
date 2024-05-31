@@ -8,19 +8,19 @@ import {
 } from 'lucide-react';
 import type { FC } from 'react';
 import wifiMeshNetwork from '../assets/wifi-mesh-network.png';
+import Card from '@/shared/ui/card';
 
 const Features: FC = () => (
 	<Section title='Почему это удобно и выгодно' id='features'>
 		<div className='mb-6 grid grid-cols-1 items-center justify-between gap-16 xl:grid-cols-2'>
 			<div>
-				<p className='mb-6 text-xl xl:text-2xl'>
+				<p className='mb-6 max-w-prose text-base lg:text-2xl'>
 					Мы используем передовую Wi-Fi mesh-технологию, что позволяет
 					отказаться от прокладки кабелей и дорогостоящего сетевого
 					оборудования.
 				</p>
-				<div className='mb-6 rounded-xl border bg-card p-6 leading-tight'>
-					<h2 className='mb-2 text-2xl font-semibold'>Преимущества</h2>
-					<ul className='space-y-2'>
+				<Card title='Преимущества' variant='default' className='mb-6'>
+					<ul className='space-y-2 text-sm lg:text-base'>
 						<li className='relative pl-4 tracking-tight'>
 							<WalletIcon className='absolute -left-2 top-0 h-4 w-4 translate-y-1/2' />
 							Доступная цена:{' '}
@@ -44,10 +44,9 @@ const Features: FC = () => (
 							</span>
 						</li>
 					</ul>
-				</div>
-				<div className='p-6 leading-tight'>
-					<h2 className='mb-2 text-2xl font-semibold'>Дополнительные плюсы</h2>
-					<ul className='space-y-2'>
+				</Card>
+				<Card title='Дополнительные плюсы' variant='secondary'>
+					<ul className='space-y-2 text-sm lg:text-base'>
 						<li className='relative pl-4 tracking-tight'>
 							<MapPinIcon className='absolute -left-2 top-0 h-4 w-4 translate-y-1/2' />
 							Контроль местоположения сотрудников:{' '}
@@ -65,7 +64,7 @@ const Features: FC = () => (
 							</span>
 						</li>
 					</ul>
-				</div>
+				</Card>
 			</div>
 			<img
 				className='mx-auto aspect-square max-h-96 w-auto dark:drop-shadow-[0_0_100px_hsl(var(--primary))] xl:h-auto xl:max-h-full xl:w-full'

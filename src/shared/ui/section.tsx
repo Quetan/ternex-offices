@@ -19,7 +19,11 @@ const Section: FC<ISectionProps> = ({
 				className
 			)}
 			{...props}>
-			{title && <Title title={title} size='xxl' className='mb-6 xl:mb-12' />}
+			{title && (
+				<Title size='xl' className='relative mb-6 leading-none xl:mb-12'>
+					{title}
+				</Title>
+			)}
 			{children}
 		</section>
 	);

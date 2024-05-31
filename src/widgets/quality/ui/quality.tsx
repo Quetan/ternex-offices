@@ -1,6 +1,7 @@
 import Section from '@/shared/ui/section';
 import type { FC } from 'react';
 import networkHighQuality from '../assets/network-high-quality.png';
+import Card from '@/shared/ui/card';
 
 const Quality: FC = () => (
 	<Section title='Надежность и качество' id='quality'>
@@ -10,13 +11,12 @@ const Quality: FC = () => (
 				className='mx-auto aspect-square max-h-96 w-auto dark:drop-shadow-[0_0_100px_hsl(var(--primary))] xl:h-auto xl:max-h-full xl:w-full'
 			/>
 			<div>
-				<p className='mb-6 text-2xl'>
+				<p className='mb-6 max-w-prose text-base xl:text-2xl'>
 					Мы предлагаем протестировать наше оборудование до оплаты, чтобы вы
 					убедились в его высоком качестве.
 				</p>
-				<div className='mb-6 leading-tight'>
-					<h2 className='mb-2 text-2xl font-semibold'>Высокие технологии</h2>
-					<ul className='list-disc space-y-2'>
+				<Card title='Передовые технологии' variant='default' className='mb-6'>
+					<ul className='list-disc space-y-2 pl-4 text-sm lg:text-base'>
 						<li>
 							Управление ИИ:{' '}
 							<span className='text-muted-foreground'>
@@ -31,17 +31,16 @@ const Quality: FC = () => (
 							</span>
 						</li>
 					</ul>
-				</div>
-				<div className='leading-tight'>
-					<h2 className='mb-2 text-2xl font-semibold'>Гарантия и поддержка</h2>
-					<ul className='list-disc space-y-2'>
+				</Card>
+				<Card title='Передовые технологии' variant='secondary'>
+					<ul className='list-disc space-y-2 pl-4 text-sm lg:text-base'>
 						<li>12 месяцев гарантии на все оборудование.</li>
 						<li>
 							Базовая техническая поддержка и возможность расширенной поддержки
 							с выделенным специалистом.
 						</li>
 					</ul>
-				</div>
+				</Card>
 			</div>
 		</div>
 	</Section>
