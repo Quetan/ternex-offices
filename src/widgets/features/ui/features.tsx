@@ -7,6 +7,7 @@ import {
 	WifiIcon
 } from 'lucide-react';
 import type { FC } from 'react';
+import wifiMeshNetwork from '../assets/wifi-mesh-network.png';
 
 const Features: FC = () => (
 	<Section title='Почему это удобно и выгодно' id='features'>
@@ -17,7 +18,7 @@ const Features: FC = () => (
 					отказаться от прокладки кабелей и дорогостоящего сетевого
 					оборудования.
 				</p>
-				<div className='mb-6 rounded-xl border bg-card p-6'>
+				<div className='mb-6 rounded-xl border bg-card p-6 leading-tight'>
 					<h2 className='mb-2 text-2xl font-semibold'>Преимущества</h2>
 					<ul className='space-y-2'>
 						<li className='relative pl-4 tracking-tight'>
@@ -44,7 +45,7 @@ const Features: FC = () => (
 						</li>
 					</ul>
 				</div>
-				<div className='p-6'>
+				<div className='p-6 leading-tight'>
 					<h2 className='mb-2 text-2xl font-semibold'>Дополнительные плюсы</h2>
 					<ul className='space-y-2'>
 						<li className='relative pl-4 tracking-tight'>
@@ -69,7 +70,7 @@ const Features: FC = () => (
 			<img
 				className='mx-auto aspect-square max-h-96 w-auto dark:drop-shadow-[0_0_100px_hsl(var(--primary))] xl:h-auto xl:max-h-full xl:w-full'
 				alt='Wi-Fi mesh сети'
-				src='/wifi-mesh-network.png'
+				src={wifiMeshNetwork}
 			/>
 		</div>
 	</Section>
